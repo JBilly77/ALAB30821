@@ -38,6 +38,21 @@ if (weeks == 3) {
 }
 
 //========================PART TWO=========================//
+plants = 100;
+const week10 = 10;
+
+//Calculate total plants after 10 weeks:
+const totalPlants = plants * (2 ** weeks);
+
+//Calculate the additional space needed to start 100 plants:
+const addSpace = totalPlants * minSpace;
+
+//Calculate the new space radius:
+const newRadius = Math.sqrt(addSpace/ PI);
+
+console.log(`Total plants in 10 weeks: ${totalPlants}`);
+console.log(`Additional space needed: ${addSpace}`);
+console.log(`The new space radius is: ${newRadius}`);
 
 
 //======================PART THREE=========================//
